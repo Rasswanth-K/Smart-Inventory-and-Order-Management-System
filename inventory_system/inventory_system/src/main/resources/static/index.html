@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Inventory Dashboard</h1>
+
+    <!-- Add Product -->
+    <div class="card">
+        <h2>Add Product</h2>
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Price">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <input type="text" id="category" placeholder="Category">
+        <button onclick="addProduct()">Add</button>
+    </div>
+
+    <!-- Product List -->
+    <div class="card">
+        <h2>Products</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Category</th>
+            </tr>
+            </thead>
+            <tbody id="productTable"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
